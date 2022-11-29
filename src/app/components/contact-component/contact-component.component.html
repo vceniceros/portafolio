@@ -1,0 +1,113 @@
+<section id="contacto" class="contacto">
+  <div class="container text-center mb-5">
+    <h3 data-aos="fade-up" class="display-4">Contacto</h3>
+    <div class="row mt-5">
+      <form (submit)="sendEmail($event)" class="col-sm-6 text-start">
+        <div data-aos="fade-up" class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="invalid-feedback">Por favor rellene el formulario.</div>
+        <div data-aos="fade-down" class="mb-3">
+          <label for="surname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="surname" 
+          name="surname"
+          required />
+        </div>
+        <div class="invalid-feedback">Por favor rellene el formulario.</div>
+        <div data-aos="fade-up" class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            aria-describedby="emailHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca compartiremos sus datos personales con nadie más.
+          </div>
+          <div class="invalid-feedback">Por favor rellene el formulario.</div>
+        </div>
+        <div data-aos="fade-down" class="mb-3">
+          <label for="phone" class="form-label">Telefono</label>
+          <input
+          name="phone"
+            type="phone"
+            class="form-control"
+            id="phone"
+            aria-describedby="phoneHelp"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            Nunca compartiremos sus datos personales con nadie más.
+          </div>
+          <div class="invalid-feedback">Por favor rellene el formulario.</div>
+        </div>
+        <div data-aos="fade-up" class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            rows="3"
+            value="Deseo contratar sus serivicios"
+          ></textarea>
+        </div>
+        <button
+          data-aos="flip-up"
+          type="submit"
+          id="send"
+          class="btn btn-primary"
+        >
+          Enviar
+        </button>
+      </form>
+      <div class="col-sm-6 text-start">
+        <h5 data-aos="fade-down" class="display-5">Otros medios</h5>
+        <div class="row">
+          <div class="col-2">
+            <a href="mailto:haizaratech@gmail.com" target="_blank"
+              ><img
+                data-aos="zoom-up"
+                src="../../../assets/img/gmail.png"
+                heigh="50"
+                width="50"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-2">
+            <a
+              href="https://wa.me/+541159323153/?text=deseo%contratar%sus%servicios"
+              target="_blank"
+              ><img
+                data-aos="zoom-up"
+                src="../../../assets/img/whatsapp.png"
+                height="50"
+                width="50"
+            /></a>
+          </div>
+          <div class="col-2">
+            <a
+              href="https://www.linkedin.com/in/valentino-ignacio-ceniceros-colella-85501b1a0"
+              target="_blank"
+              ><img
+                data-aos="zoom-up"
+                src="../../../assets/img/linkedin.png"
+                alt=""
+                height="50"
+                width="50"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

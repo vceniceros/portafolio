@@ -1,0 +1,35 @@
+
+<section id="proyectos">
+<div class="text-center container">
+  <h3 data-aos="fade-up" class="display-3 mb-4 mt-4">Proyectos en los cuales trabaje</h3>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5 mb-5">
+    <div data-aos="fade-up" class="col" *ngFor="let project of projects">
+      <div class="card shadow-sm">
+        <img
+          class="bd-placeholder-img card-img-top"
+          width="100%"
+          height="225"
+          src="{{ project.img }}"
+        />
+
+        <div class="card-body">
+          <h4 class="card-text">{{ project.name }}</h4>
+          <p class="card-text">{{ project.descrip }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="{{project.url}}" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">
+                Link a la pagina
+              </button></a>
+              <div *ngIf="project.github != '' ">
+              <a href="{{project.github}}" target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-sm btn-outline-secondary">
+                Github
+              </button></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

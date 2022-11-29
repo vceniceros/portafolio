@@ -1,0 +1,12 @@
+<section id="tecnologias">
+   
+<h3 data-aos="flip-up" class="display-3"> Tecnologias que utilizo</h3>
+    <div class="technologie-grid">
+<div data-aos="flip-up" class="technologie" *ngFor="let technologie of Technologies">
+    <a href="{{technologie.url}}" target="_blank"><img class="technologie-img" src="{{technologie.img}}" height="80px" width="80px"alt="">
+    </a><div class="technologie-text">
+    <h5>{{technologie.name}}</h5>
+    </div>
+</div>
+</div>
+</section>
