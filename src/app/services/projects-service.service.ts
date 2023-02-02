@@ -20,7 +20,7 @@ export class ProjectsServiceService {
         '../../../assets/img/fundacion-teko-pora.jpg',
         'La fundacion "Teko Pora" es una ONG sin fines de lucro cuyo proposito es ayudar a las comunidades nativas del noreste del pais, la pagina esta hecha en wordpress y utiliza la api de Mercado libre para recibir donaciones.',
         'https://fundacion-teko-pora.org',
-        ''
+        'https://github.com/vceniceros/teko-pora-upgrade.git'
       ),
       new project(
         'GCM Baires',
