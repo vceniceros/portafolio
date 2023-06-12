@@ -10,7 +10,7 @@ export class ContactComponentComponent implements OnInit {
   constructor() { }
   public sendEmail(e: Event) {
     e.preventDefault();
-    emailjs.sendForm('service_emtp1n9', 'template_ns30nze', e.target as HTMLFormElement, 'U6JQI_TrlLKL4pvhT')
+    emailjs.sendForm('service_emtp1n9', 'template_s7hciht', e.target as HTMLFormElement, 'U6JQI_TrlLKL4pvhT')
       .then((result: EmailJSResponseStatus) => {
         alert("mensaje enviado con exito");
       }, (error) => {
@@ -18,7 +18,7 @@ export class ContactComponentComponent implements OnInit {
       });
   }
   ngOnInit(): void {
-    
+
   }
 
 }

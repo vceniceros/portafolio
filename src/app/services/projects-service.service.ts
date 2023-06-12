@@ -13,7 +13,7 @@ export class ProjectsServiceService {
         '../../../assets/img/rivera-designs.jpg',
         'Es un emprendimiento de venta de muebles de aluminio anodizado, el front-end esta hecho en Angular.js y el backend utiliza PHPMailer para la recepcion de consultas, mas adelante planea convertirse en un Ecommerce.',
         'https://rivera-designs.com',
-        'https://github.com/vceniceros/Rivera-designs-2.5.git'
+        'https://github.com/vceniceros/rivera-designs--current-page-'
       ),
       new project(
         'Fundacion TekoPora',
