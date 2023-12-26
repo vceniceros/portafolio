@@ -160,8 +160,7 @@ body{
   align-items: center;
 }
 .about-me-img{
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: grayscale(1);
+
   border: solid #1721a8;
   box-shadow: #065f97 1px 0px 1px 0px;
   

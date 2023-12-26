@@ -26,6 +26,7 @@
     "emailjs": "^4.0.1",
     "emailjs-com": "^3.2.0",
     "jquery": "^3.6.1",
+    "ng": "^0.0.0",
     "rxjs": "~7.5.0",
     "simplescrollup": "^1.1.1",
     "tslib": "^2.3.0",
