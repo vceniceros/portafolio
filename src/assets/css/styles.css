@@ -7,7 +7,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+  
     /*fuentes*/
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -24,67 +24,33 @@ body{
 /*nav*/
 .logo_letter{
     position: absolute;
-    z-index: 100;
+
 }
-.logo_form{
-    animation-duration: 30s;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    z-index: 10;
-}
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
+
+
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.nav-link{
+  text-decoration: none;
+  color: #eaeae9 !important;
+}
+.nav-link:hover{
+  color: #FFDE59 !important;
+  transition-duration: 3000;
+}
 /*Presentacion*/
-.presentation_img{
-    z-index: 10;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: auto;
-}
 .presentation{
-    position: relative;
-    z-index: 100;
-    display: flex;
-    text-align: left;
-    width: 100%;
-    height: 600px;
-    background-image: url(../img/notebook-programando.jpg);
-    background-position: center;
-    background-size: cover;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    
+  background-color: #01010e;
 }
-.presentation_title{
-    font-size: 7em;
-    color: #0576ae;
-    width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid #18bdec;
-    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
-  }
   @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 50%;
+      width: 44%;
     }
   }
   @keyframes blink {
@@ -92,42 +58,20 @@ body{
       border-color: transparent;
     }
   }
-.presentation_subtitle{
-    font-size: 4em;
-    color: #0576ae;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #065f97, 0 0 25px ;
-    -webkit-text-fill-color: #1721a8;
-    -webkit-text-stroke-color:#0576ae;
-    -webkit-text-stroke-width:0.2px;
-    -moz-text-fill-color: #1721a8;
-    -moz-text-stroke-color:#0576ae;
-    -moz-text-stroke-width:0.2px;
-    text-align: center;
-    animation: latido 5s infinite;
-    margin-left: 50px;
-  }
-  @keyframes latido {
-    from { transform: none; }
-    50% { transform: scale(1.2); }
-    to { transform: none; }
+.presentation_title{
+  color: #eaeae9;
 }
-@media screen and (max-width: 600px){
-  .presentation{
-    display: flex;
-    text-align: start;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    height: 450px;
+.presentation_subtitle{
+    color:#FFDE59;
+    /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #065f97, 0 0 25px ;*/
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+ 
   }
-  .presentation_subtitle{
-    font-size: 1.7rem;
-    margin:0;
-    margin-left: 30px;
-  }
-  .presentation_title{
-    font-size: 3.6rem;
-  }
+
+
   @keyframes typing {
     from {
       width: 0;
@@ -136,7 +80,7 @@ body{
       width: 100%;
     }
   }
-}
+
 #about-me{
   position: relative;
   height: 1fr;
