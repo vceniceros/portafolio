@@ -13,6 +13,8 @@ import { ProjectsComponentComponent } from './components/projects-component/proj
 import { ToTopButtonComponent } from './components/to-top-button/to-top-button.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponentComponent } from './components/contact-component/contact-component.component';
+import { RotatingTitleComponent } from './components/rotating-title/rotating-title.component';
+import { TypingSubtitleComponent } from './components/typing-subtitle/typing-subtitle.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ContactComponentComponent } from './components/contact-component/contac
     ProjectsComponentComponent,
     ToTopButtonComponent,
     HomeComponent,
-    ContactComponentComponent
+    ContactComponentComponent,
+    RotatingTitleComponent,
+    TypingSubtitleComponent
   ],
   imports: [
     BrowserModule,
