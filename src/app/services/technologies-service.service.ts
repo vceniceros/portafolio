@@ -51,24 +51,58 @@ export class TechnologiesServiceService {
       ),
       new technologie(
         8,
+        'React.js',
+        '../../assets/img/React.png',
+        'https://es.react.dev',
+
+      ),
+      new technologie(
+        9,
         'Node.js',
         '../../../assets/img/Node.png',
         'https://nodejs.org/en/about/'
       ),
       new technologie(
-        9,
+        10,
         'MySQL',
         '../../../assets/img/SQL.png',
         'https://www.mysql.com/'
       ),
       new technologie(
-        10,
+        11,
         'PHP',
         '../../../assets/img/PHP.png',
         'https://www.php.net/manual/es/intro-whatis.php'
       ),
-      
-      
+      new technologie(
+        12,
+        'Laravel',
+        '../../assets/img/laravel.png',
+        'https://laravel.com',
+
+      ),
+      new technologie(
+        13,
+        'C++',
+        '../../assets/img/c++.png',
+        'https://es.wikipedia.org/wiki/C%2B%2B',
+
+      ),
+      new technologie(
+        14,
+        'Python',
+        '../../assets/img/Python.png',
+        'https://www.python.org',
+
+      ),
+      new technologie(
+        15,
+        'Java',
+        '../../assets/img/Java.png',
+        'https://www.java.com/es/',
+
+      ),
+
     ];
   }
   getTechnologie() {
