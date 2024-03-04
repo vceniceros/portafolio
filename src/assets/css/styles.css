@@ -55,7 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
+  height: 80vh;
 }
 .presentation-white {
   display: flex;
@@ -66,7 +66,7 @@ body {
   background-image: url(../img/fondo-japones.jpeg);
 
   background-position: center;
-  height: 400px;
+  height: 80vh;
 }
 
 .cvimage-container {
@@ -77,17 +77,130 @@ body {
   height: 100vh; /* Ajusta según tus necesidades para centrar verticalmente */
 }
 
-.cvimage {
-  width: 15vw;
-  height: 15vw;
-  border: solid 3px #FFDE59;
-  box-shadow: 0 0 10px 0 rgba(255, 222, 89, 0.8); /* Resplandor */
-  transition: transform 0.3s ease-in-out; /* Efecto de transición en el tamaño */
+.button-cv{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+
+}
+.button-cv a{
+  text-decoration: none;
+}
+.button-cv::before,
+.button-cv::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
 }
 
-.cvimage:hover {
-  transform: scale(1.1); /* Cambia el tamaño al hacer hover */
+.button-cv::before {
+  top: 0;
+  border-bottom-width: 0;
 }
+
+.button-cv::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button-cv:active,
+.button-cv:focus {
+  outline: none;
+}
+
+.button-cv:active::before,
+.button-cv:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button-cv:active::before {
+  top: 3px;
+}
+
+.button-cv:active::after {
+  bottom: 3px;
+}
+
+.button_lg-cv {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg-cv::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg-cv::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl-cv{
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #a98b14;
+
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.button_text-cv{
+  position: relative;
+
+}
+
+.button-cv:hover {
+  color: #0f1923;
+}
+
+.button-cv:hover .button_sl-cv {
+  width: calc(100% + 15px);
+}
+
+.button-cv:hover .button_lg-cv::after {
+  background-color: #fff;
+}
+
 /*figuras geometricas*/
 #hexagon {
   height: 5.7735em;
@@ -272,6 +385,8 @@ body {
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-direction: column;
+  width: 100%;
+  height: 30vh;
   margin-top: 20px;
 }
 
@@ -284,14 +399,12 @@ body {
 }
 .text {
   margin-top: 60px;
-
 }
 .word {
   font-size: 1.3em;
   position: absolute;
   width: auto;
   opacity: 0;
-  margin-left: 5px;
 
 }
 
@@ -321,7 +434,7 @@ body {
 }
 
 .rdBlue {
-  color: #052057;
+  color: #2f4c86;
 }
 
 .gold {
@@ -337,7 +450,7 @@ body {
 }
 
 .midnight {
-  color: #003365;
+  color: #46627e;
 }
 
 .presentation-subtitle{
